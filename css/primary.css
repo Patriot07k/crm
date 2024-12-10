@@ -1,0 +1,191 @@
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    background: linear-gradient(336deg, #3a3d5b, #1e202f);
+    background-size: cover; /* Розтягнути фон на весь екран */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Фіксувати фон під час прокрутки */
+    height: 100vh;
+    color: white; /* Текст на фоні буде білим для кращої видимості */
+}
+
+
+ul {
+    margin: 0;
+    list-style-type: none;
+}
+
+.nav-list {
+    background-color:white;
+    border-radius: 3px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.3); /* Легка прозорість для хедера */
+    backdrop-filter: blur(5px); /* Розмиття фону під хедером */
+    position: sticky;
+    top: 0;
+    width: 100%; /* Хедер на всю ширину екрана */
+    z-index: 10;
+    border-radius: 40px;
+}
+
+.logo-container {
+    flex-grow: 1;
+    margin-left: 30px;
+}
+
+
+.logo-img {
+    height: 70px;
+    width: 70px;
+    transition: all .20s ease;
+}
+
+.logo-img:hover{
+    transform: scale(1.05);
+}
+
+.bars {
+    display: none;
+}
+
+@media (max-width: 1225px) {
+    nav .bars {
+        display: block;
+        margin-right: 30px;
+        font-size: 30px;
+    }
+
+    nav .nav-list {
+        display: none;
+    }
+
+    nav:hover .nav-list {
+        display: block;
+        margin-top: 100px;
+        margin-right: 19px;
+        background-color: white;
+        position: relative;
+        padding: 10px 10px 10px 0;
+    }
+}
+
+/* Основний контент */
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.welcome {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 60px 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.welcome h1 {
+    margin: 0;
+    font-weight: 600;
+    font-size: 36px;
+}
+
+.welcome p {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #ff7043;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #d84315;
+}
+
+/* Футер */
+.footer {
+    background-color: #4b3737;
+    justify-content: center;
+    border-radius: 80px;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+
+}
+
+.footer-text {
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    margin: 0;
+    color: #be8585;
+}
+
+
+.links {
+    display: flex;
+    justify-content: center;
+}
+
+.contacts {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.contacts li {
+    padding: 0 20px;
+    font-size: 35px;
+}
+
+.icon i {
+    transition: all .5s ease;
+    color: #be8585;
+}
+
+.fa-phone:hover {
+    color: rgba(189, 0, 88, 0.866);
+}
+
+.fa-envelope:hover {
+    color: rgb(215, 182, 33);
+}
+
+.fa-whatsapp:hover {
+    color: rgb(4, 176, 27);
+}
+
+.fa-telegram:hover {
+    color: rgb(22, 132, 211);
+}
+
+.contacts li:hover {
+    font-weight: 800;
+}

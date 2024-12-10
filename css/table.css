@@ -1,0 +1,276 @@
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    background: linear-gradient(336deg, #8d6e63, #4e342e); /* Градієнт від світлого до темного коричневого */
+    background-size: cover; /* Розтягнути фон на весь екран */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Фіксувати фон під час прокрутки */
+    height: 100vh;
+    color: white; /* Текст на фоні буде білим для кращої видимості */
+}
+
+ul {
+    margin: 0;
+    list-style-type: none;
+}
+
+.nav-list {
+    background-color:white;
+    border-radius: 3px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    background-image: url(https://en.idei.club/uploads/posts/2023-03/1679556803_en-idei-club-p-sino-zhovtii-fon-dizain-pinterest-1.jpg);
+    height: 90px;
+    justify-content: end;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    padding-left: 0;
+}
+
+.nav-list li {
+    align-items: center;
+    color: black;
+    font-weight: bold;
+    font-size: 19px;
+    padding: 0 15px;
+}
+
+.nav-list li:last-of-type {
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
+.nav-list li a {
+    transition: all .25s ease;
+}
+
+.nav-list li a:hover {
+    color: rgb(0, 142, 24);
+}
+
+.logo-container {
+    flex-grow: 1;
+    margin-left: 30px;
+}
+
+.logo-img {
+    height: 70px;
+    width: 70px;
+    transition: all .20s ease;
+}
+
+.logo-img:hover{
+    transform: scale(1.05);
+}
+
+.bars {
+    display: none;
+}
+
+@media (max-width: 750px) {
+    nav .bars {
+        display: block;
+        margin-right: 30px;
+        font-size: 30px;
+    }
+
+    nav .nav-list {
+        display: none;
+    }
+
+    nav:hover .nav-list {
+        display: block;
+        margin-top: 100px;
+        margin-right: 19px;
+        background-color: white;
+        position: relative;
+        padding: 10px 10px 10px 0;
+    }
+}
+
+.content {
+    max-width: 100%;
+    margin: 0 20px 0 20px;
+    border-radius: 20px;
+}
+
+
+section {
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: rgb(0 0 0 / 70%);
+    border: 2px solid gray;
+    color: white;
+}
+
+.title {
+    font-size: 45px;
+    font-weight: bold;
+    background-color: rgb(0 0 0 / 70%);
+}
+
+@media (max-width: 410px) {
+    .title {
+        font-size: 30px;
+    }
+
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid white;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+td {
+    width: 25%;
+}
+
+button i {
+    font-size: 20px;
+}
+
+@media (max-width: 732px) {
+    button i {
+        margin: 5px;
+    }
+}
+
+button {
+    padding: 5px 10px;
+    margin: 5px;
+}
+
+@media (max-width: 428px) {
+    td, th {
+        padding: 2px;
+    }
+}
+
+@media (max-width: 732px) {
+    .main {
+        padding: 0;
+    }
+}
+
+
+.title h1 {
+    margin: 15px 0;
+}
+
+section p {
+    font-size: 20px;
+
+}
+
+section a {
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 10px;
+    height: 37px;
+    display: flex;
+    color: white;
+    background-color: rgb(112 82 82 / 81%);
+    align-items: center;
+    justify-content: start;
+    border-radius: 10px;
+    width: fit-content;
+    padding: 0 20px;
+    transition: all .20s ease;
+
+}
+
+section a:hover {
+    background-color: cadetblue;
+}
+
+.section a svg {
+    justify-content: end;
+}
+
+@media (max-width: 438px) {
+    section a {
+        height: 45px;
+    }
+
+}
+
+.about {
+    margin-bottom: 0;
+}
+
+.footer {
+    background-color: #c0d9f3;
+    justify-content: center;
+    margin-top: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+@media (max-height: 737px) {
+    .footer {
+        position: static;
+    }
+
+}
+
+.footer-text {
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    margin: 0;
+}
+
+
+.links {
+    display: flex;
+    justify-content: center;
+}
+
+.contacts {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.contacts a {
+    transition: all .25s ease;
+}
+
+.contacts a:hover {
+    color: rgb(75, 75, 217);
+}
+
+.contacts li {
+    padding: 0 20px;
+    font-size: 35px;
+}
+
+.contacts li:hover {
+    font-weight: 800;
+}

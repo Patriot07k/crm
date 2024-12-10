@@ -1,0 +1,238 @@
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    background: linear-gradient(336deg, #3a3d5b, #1e202f);
+    background-size: cover; /* Розтягнути фон на весь екран */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Фіксувати фон під час прокрутки */
+    height: 100vh;
+    color: white; /* Текст на фоні буде білим для кращої видимості */
+}
+
+ul {
+    margin: 0;
+    list-style-type: none;
+}
+
+.nav-list {
+    background-color:white;
+    border-radius: 3px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.3); /* Легка прозорість для хедера */
+    backdrop-filter: blur(5px); /* Розмиття фону під хедером */
+    position: sticky;
+    top: 0;
+    width: 100%; /* Хедер на всю ширину екрана */
+    z-index: 10;
+    border-radius: 40px;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    padding-left: 0;
+    background-color: #4b373700;
+}
+
+.nav-list li {
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 19px;
+    padding: 0 5px;
+}
+
+/* .nav-list li:last-of-type {
+    padding-left: 15px;
+    padding-right: 0;
+
+}
+
+.nav-list li:last-of-type a {
+    display: flex;
+    align-items: center;
+    color: white;
+    background-color: rgba(239, 69, 69, 0.81);
+    height: 30px;
+    padding: 0 10px;
+    border-radius: 3px;
+    transition: all .25s ease;
+}
+
+.nav-list li:last-of-type a:hover {
+    background-color: rgb(111, 29, 29);
+}
+
+.nav-list li:last-of-type a svg {
+    width: 20px;
+    margin-right: 5px;
+} */
+
+.logo-container {
+    flex-grow: 1;
+    margin-left: 30px;
+}
+
+
+.logo-img {
+    height: 70px;
+    width: 70px;
+    transition: all .20s ease;
+}
+
+.logo-img:hover{
+    transform: scale(1.05);
+}
+
+.bars {
+    display: none;
+}
+
+@media (max-width: 1225px) {
+    nav .bars {
+        display: block;
+        margin-right: 30px;
+        font-size: 30px;
+    }
+
+    nav .nav-list {
+        display: none;
+    }
+
+    nav:hover .nav-list {
+        display: block;
+        margin-top: 100px;
+        margin-right: 19px;
+        background-color: white;
+        position: relative;
+        padding: 10px 10px 10px 0;
+    }
+}
+
+.content {
+    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: white;
+}
+
+.cases-section h2 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 40px;
+    font-size: 36px;
+    color: #ffcc80;
+}
+
+.case-card {
+    background-color: rgba(75, 55, 55, 0.8);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s;
+}
+
+.case-card:hover {
+    transform: scale(1.02);
+}
+
+.case-card h3 {
+    margin-top: 0;
+    font-size: 28px;
+    color: #ffab91;
+}
+
+.case-card p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.btn, .nav-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #ff7043;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.nav-btn {
+    margin-top: 0;
+}
+
+.btn:hover, .nav-btn:hover {
+    background-color: #d84315;
+}
+
+.footer {
+    background-color: #4b3737;
+    justify-content: center;
+    border-radius: 80px;
+
+}
+
+.footer-text {
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    margin: 0;
+    color: #be8585;
+}
+
+
+.links {
+    display: flex;
+    justify-content: center;
+}
+
+.contacts {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.contacts li {
+    padding: 0 20px;
+    font-size: 35px;
+}
+
+.icon i {
+    transition: all .5s ease;
+    color: #be8585;
+}
+
+.fa-phone:hover {
+    color: rgba(189, 0, 88, 0.866);
+}
+
+.fa-envelope:hover {
+    color: rgb(215, 182, 33);
+}
+
+.fa-whatsapp:hover {
+    color: rgb(4, 176, 27);
+}
+
+.fa-telegram:hover {
+    color: rgb(22, 132, 211);
+}
+
+.contacts li:hover {
+    font-weight: 800;
+}

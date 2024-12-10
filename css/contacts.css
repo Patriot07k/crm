@@ -1,0 +1,255 @@
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    background: linear-gradient(336deg, #3a3d5b, #1e202f);
+    background-size: cover; /* Розтягнути фон на весь екран */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Фіксувати фон під час прокрутки */
+    height: 100vh;
+    color: white; /* Текст на фоні буде білим для кращої видимості */
+}
+
+ul {
+    margin: 0;
+    list-style-type: none;
+}
+
+.nav-list {
+    border-radius: 3px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.3); /* Легка прозорість для хедера */
+    backdrop-filter: blur(5px); /* Розмиття фону під хедером */
+    position: sticky;
+    top: 0;
+    width: 100%; /* Хедер на всю ширину екрана */
+    z-index: 10;
+    border-radius: 40px;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    padding-left: 0;
+}
+
+.nav-list li {
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 19px;
+    padding: 0 5px;
+}
+
+.nav-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #ff7043;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.nav-btn {
+    margin-top: 0;
+}
+
+.nav-btn:hover {
+    background-color: #d84315;
+}
+
+
+
+.logo-container {
+    flex-grow: 1;
+    margin-left: 30px;
+}
+
+.logo-img {
+    height: 70px;
+    width: 70px;
+    transition: all .20s ease;
+}
+
+.logo-img:hover{
+    transform: scale(1.05);
+}
+
+.bars {
+    display: none;
+}
+
+@media (max-width: 750px) {
+    nav .bars {
+        display: block;
+        margin-right: 30px;
+        font-size: 30px;
+    }
+
+    nav .nav-list {
+        display: none;
+    }
+
+    nav:hover .nav-list {
+        display: block;
+        margin-top: 100px;
+        margin-right: 19px;
+        background-color: white;
+        position: relative;
+        padding: 10px 10px 10px 0;
+    }
+}
+
+.content {
+    padding: 50px;
+}
+
+.title {
+    margin: 20px;
+
+}
+
+h1, h2 {
+    font-size: 35px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 30px;
+    color: #ffcc80;
+}
+
+p {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.cards-container {
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch; /* Картки розтягуються до однакової висоти */
+    gap: 30px;
+    margin: 20px 0;
+}
+
+.card {
+    background-color: rgba(75, 55, 55, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: transform 0.2s;
+    flex: 1 1 300px; /* Мінімальний розмір картки 300px */
+    max-width: 300px; /* Обмеження максимальної ширини */
+    display: flex;
+    flex-direction: column; /* Вирівнювання вмісту вертикально */
+    justify-content: space-between; /* Розподіл простору всередині картки */
+}
+
+.card h2 {
+    margin: 10px 0;
+}
+
+.card h3 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+
+.card p {
+    margin: 5px 0;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.office-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.office-list li {
+    padding: 10px 0;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.office-list li i {
+    margin-right: 10px;
+}
+
+.footer {
+    background-color: #4b3737;
+    justify-content: center;
+    border-radius: 80px;
+
+}
+
+.footer-text {
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    margin: 0;
+    color: #be8585;
+}
+
+
+.links {
+    display: flex;
+    justify-content: center;
+}
+
+.contacts {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.contacts li {
+    padding: 0 20px;
+    font-size: 35px;
+}
+
+.icon i {
+    transition: all .5s ease;
+    color: #be8585;
+}
+
+.fa-phone:hover {
+    color: rgba(189, 0, 88, 0.866);
+}
+
+.fa-envelope:hover {
+    color: rgb(215, 182, 33);
+}
+
+.fa-whatsapp:hover {
+    color: rgb(4, 176, 27);
+}
+
+.fa-telegram:hover {
+    color: rgb(22, 132, 211);
+}
+
+.contacts li:hover {
+    font-weight: 800;
+}
